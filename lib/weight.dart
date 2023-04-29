@@ -88,7 +88,7 @@ class _WeightState extends State<Weight> {
                   color: Color(0xFF0BBDF5),
                 ),
                 child: GestureDetector(
-                  onTap: null,
+                  onTap: () =>  Navigator.push(context,MaterialPageRoute(builder: (context) => Activity(),),),
                   child: Text(
                     'Continue',
                     style: TextStyle(
