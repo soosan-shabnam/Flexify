@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flexify/homepage.dart';
+import 'package:flexify/weight.dart';
 class Activity extends StatefulWidget {
   const Activity({Key? key}) : super(key: key);
 
@@ -47,7 +49,7 @@ class _ActivityState extends State<Activity> {
               ),
 
               child: GestureDetector(
-                onTap: null,
+                onTap: () =>  Navigator.push(context,MaterialPageRoute(builder: (context) => Homepage(),),),
                 child: Center(
                   child: Text(
                     'Beginner',
@@ -71,7 +73,7 @@ class _ActivityState extends State<Activity> {
               ),
 
               child: GestureDetector(
-                onTap: null,
+                onTap: () =>  Navigator.push(context,MaterialPageRoute(builder: (context) => Homepage(),),),
                 child: Center(
                   child: Text(
                     'Intermediate',
@@ -97,7 +99,7 @@ class _ActivityState extends State<Activity> {
               ),
 
               child: GestureDetector(
-                onTap: null,
+                onTap: () =>  Navigator.push(context,MaterialPageRoute(builder: (context) => Homepage(),),),
                 child: Center(
                   child: Text(
                     'Advanced',
@@ -121,7 +123,7 @@ class _ActivityState extends State<Activity> {
                   color: Color(0xFF0BBDF5),
                 ),
                 child: GestureDetector(
-                  onTap: null,
+                  onTap: () =>  Navigator.push(context,MaterialPageRoute(builder: (context) => Weight(),),),
                   child: Text(
                     '   Back   ',
                     style: TextStyle(
@@ -141,7 +143,7 @@ class _ActivityState extends State<Activity> {
                     color: Color(0xFF0BBDF5),
                   ),
                   child: GestureDetector(
-                    onTap: () =>  Navigator.push(context,MaterialPageRoute(builder: (context) => Activity(),),),
+                    onTap: () =>  Navigator.push(context,MaterialPageRoute(builder: (context) => Homepage(),),),
                     child: Text(
                       'Continue',
                       style: TextStyle(
