@@ -65,6 +65,13 @@ flutter:
     - assets/logo.png
     - assets/halflogo.png
     - assets/arrow.png
+    - assets/planck.PNG
+    - assets/shoulder_curl.PNG
+    - assets/squat.PNG
+    - assets/yoga.PNG
+    - assets/calorie_icon.PNG
+    - assets/homepage_icon.PNG
+    - assets/personal_icon.PNG
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

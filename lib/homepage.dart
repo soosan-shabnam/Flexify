@@ -17,6 +17,7 @@ class _HomepageState extends State<Homepage> {
       body:Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          SizedBox(height:height*0.01,),
           Align(
             alignment: Alignment.topLeft,
             child: Text('Hello, Soosan!',
@@ -74,9 +75,135 @@ class _HomepageState extends State<Homepage> {
 
                 color: Colors.black,
               ),),),
-            Row(
-              children: [],
+          SizedBox(height: height*0.01),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [Container(
+              height:height*0.15,
+              width:width*0.35,
+
+              padding: const EdgeInsets.all(20.0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(10)),
+                color: Color(0x4D0BBDF5),
+              ),
+              child: GestureDetector(
+                onTap: null,
+                child: Image.asset('assets/planck.PNG'),
+              ),
             ),
+              SizedBox(
+                width: width*0.07,
+              ),
+              Container(
+                height:height*0.15,
+                width:width*0.35,
+                padding: const EdgeInsets.all(20.0),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                  color: Color(0x4D0BBDF5),
+                ),
+                child: GestureDetector(
+                  onTap: null,
+                  child:  Image.asset('assets/shoulder_curl.PNG'),
+                ),
+              ),
+              SizedBox(height:height*0.05,),],
+          ),
+          SizedBox(height:height*0.05,),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [Container(
+              height:height*0.15,
+              width:width*0.35,
+
+              padding: const EdgeInsets.all(20.0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(10)),
+                color: Color(0x4D0BBDF5),
+              ),
+              child: GestureDetector(
+                onTap: null,
+                child: Image.asset('assets/squat.PNG'),
+              ),
+            ),
+              SizedBox(
+                width: width*0.07,
+              ),
+              Container(
+                height:height*0.15,
+                width:width*0.35,
+                padding: const EdgeInsets.all(20.0),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                  color: Color(0x4D0BBDF5),
+                ),
+                child: GestureDetector(
+                  onTap: null,
+                  child:  Image.asset('assets/yoga.PNG'),
+                ),
+              ),
+              SizedBox(height:height*0.05,),],
+          ),
+          SizedBox(height:height*0.1),
+
+
+          Align(
+            alignment: Alignment.bottomLeft,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [Container(
+                height:height*0.09,
+                width:width*0.2,
+
+                padding: const EdgeInsets.all(20.0),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                  color: Colors.white,
+                ),
+                child: GestureDetector(
+                  onTap: null,
+                  child: Image.asset('assets/homepage_icon.PNG'),
+                ),
+              ),
+                SizedBox(
+                  width: width*0.15,
+                ),
+                Container(
+                  height:height*0.09,
+                  width:width*0.2,
+                  padding: const EdgeInsets.all(20.0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    color: Colors.white,
+                  ),
+                  child: GestureDetector(
+                    onTap: null,
+                    child:  Image.asset('assets/calorie_icon.PNG'),
+                  ),
+                ),
+
+                SizedBox(
+                  width: width*0.15,
+                ),
+                Container(
+                  height:height*0.09,
+                  width:width*0.2,
+                  padding: const EdgeInsets.all(20.0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    color: Colors.white,
+                  ),
+                  child: GestureDetector(
+                    onTap: null,
+                    child:  Image.asset('assets/personal_icon.PNG'),
+                  ),
+                ),
+                ],
+            ),
+          ),
+
+
 
 
 
