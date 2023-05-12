@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flexify/info.dart';
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
 
@@ -17,7 +18,7 @@ class _HomepageState extends State<Homepage> {
       body:Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(height:height*0.01,),
+          SizedBox(height:height*0.03,),
           Align(
             alignment: Alignment.topLeft,
             child: Text('Hello, Soosan!',
@@ -37,7 +38,7 @@ class _HomepageState extends State<Homepage> {
               ),),
           ),
           SizedBox(
-            height: height*0.01,
+            height: height*0.005,
           ),
           Image.asset('assets/logo.png'),
           SizedBox(
@@ -153,7 +154,7 @@ class _HomepageState extends State<Homepage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [Container(
-                height:height*0.09,
+                height:height*0.08,
                 width:width*0.2,
 
                 padding: const EdgeInsets.all(20.0),
@@ -170,7 +171,7 @@ class _HomepageState extends State<Homepage> {
                   width: width*0.15,
                 ),
                 Container(
-                  height:height*0.09,
+                  height:height*0.08,
                   width:width*0.2,
                   padding: const EdgeInsets.all(20.0),
                   decoration: BoxDecoration(
@@ -187,7 +188,7 @@ class _HomepageState extends State<Homepage> {
                   width: width*0.15,
                 ),
                 Container(
-                  height:height*0.09,
+                  height:height*0.08,
                   width:width*0.2,
                   padding: const EdgeInsets.all(20.0),
                   decoration: BoxDecoration(
@@ -195,7 +196,8 @@ class _HomepageState extends State<Homepage> {
                     color: Colors.white,
                   ),
                   child: GestureDetector(
-                    onTap: null,
+                    onTap: () =>  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Information(),),),
                     child:  Image.asset('assets/personal_icon.PNG'),
                   ),
                 ),
